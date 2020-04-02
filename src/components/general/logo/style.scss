@@ -1,0 +1,13 @@
+.logo{
+	a{
+		display: block;
+		font-size: 24px;
+		color: inherit;
+		span{
+			color: #008000;
+		}
+		&:hover{
+			text-decoration: none;
+		}
+	}
+}
