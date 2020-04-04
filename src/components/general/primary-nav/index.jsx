@@ -10,7 +10,7 @@ export const PrimaryNav = () => {
 	return (
 		<ul className="primary-nav">
 			{MenuList.map( (item , i) => <li key={i}>
-				<NavLink to={item.link}>{item.title}</NavLink>
+				<NavLink to={item.link} exact>{item.title}</NavLink>
 			</li> )}
 		</ul>
 	)
