@@ -2,4 +2,8 @@ export * from './homeCarousel';
 export * from './accordion';
 export * from './tabs';
 export * from './usersList';
+export * from './postsList';
+export * from './commentsList';
+export * from './albumsList';
+export * from './photosList';
 export * from './loading';

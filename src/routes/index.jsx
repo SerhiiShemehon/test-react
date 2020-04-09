@@ -1,15 +1,31 @@
 import React, { useEffect } from 'react';
 import { connect } from 'react-redux';
 
-import { getUsers } from '../actions'
+import {
+	getUsers,
+	getPosts,
+	getСomments,
+	getAlbums,
+	getPhotos
+} from '../actions'
 
 import { Header, Footer } from '../components';
 import { Main } from './Main';
 
-const Wrapper = (props) => {
+const Wrapper = ({
+	getUsers,
+	getPosts,
+	getСomments,
+	getAlbums,
+	getPhotos
+}) => {
 
 	useEffect(() => {
-		props.getUsers();
+		getUsers();
+		getPosts();
+		getСomments();
+		getAlbums();
+		getPhotos();
 	},[]);
 
 	return (
@@ -23,14 +39,16 @@ const Wrapper = (props) => {
 	)
 }
 
-const mapStateToProps = (state) => ({
-});
 
 const mapDispatchToProps = {
-  getUsers
+	getUsers,
+	getPosts,
+	getСomments,
+	getAlbums,
+	getPhotos
 };
 
 export const PageWrapper = connect(
-  mapStateToProps,
+  null,
   mapDispatchToProps
 )(Wrapper);

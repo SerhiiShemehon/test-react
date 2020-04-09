@@ -1,10 +1,14 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 import { HomeCarousel, Accordion, Tabs } from '../'
 
 import { DataLoremText, DataLoremText2 } from '../../data';
 
 export const HomePage = () => {
+	useEffect(() => {
+    window.scrollTo(0, 0);
+	}, []);
+
 	return (
 		<React.Fragment>
 			<HomeCarousel />

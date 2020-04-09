@@ -10,7 +10,17 @@ export const COMMENTS_LOADING = 'COMMENTS_LOADING';
 export const COMMENTS_DATA = 'COMMENTS_DATA';
 export const COMMENTS_ERROR = 'COMMENTS_ERROR';
 
+export const ALBUMS_LOADING = 'ALBUMS_LOADING';
+export const ALBUMS_DATA = 'ALBUMS_DATA';
+export const ALBUMS_ERROR = 'ALBUMS_ERROR';
+
+export const PHOTOS_LOADING = 'PHOTOS_LOADING';
+export const PHOTOS_DATA = 'PHOTOS_DATA';
+export const PHOTOS_ERROR = 'PHOTOS_ERROR';
+
 export const URL = 'https://jsonplaceholder.typicode.com/';
 export const URL_POSTS = `${URL}posts`;
 export const URL_COMMENTS = `${URL}comments`;
 export const URL_USERS = `${URL}users`;
+export const URL_ALBUMS = `${URL}albums`;
+export const URL_PHOTOS = `${URL}photos`;
